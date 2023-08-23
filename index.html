@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>    
+    <title>HTML</title>
+</head>
+
+<body>
+
+    <!-- Anchor TAg -->
+    <h1>Anchor Tag</h1>
+
+    <a href="#">Home</a>
+
+    <a href="contact.html" title="This is contact page" >Contact us</a>
+
+    <a href="about.html" title="This is about page">About us</a>
+
+    <a href="https://www.google.com" target="_blank" >google</a>
+
+    <hr>
+
+    <!-- Header tags -->
+    <h1>Header Tags</h1>
+
+    <h1>Good Morning</h1>
+    <h2>Good Morning</h2>
+    <h3>Good Morning</h3>
+    <h4>Good Morning</h4>
+    <h5>Good Morning</h5>
+    <h6>Good Morning</h6>
+
+    <hr>
+
+    <!-- Para Tag -->
+    <h1>Para Tag</h1>
+    <p>Lorem ipsum dolor sit amet <b>consectetur</b> adipisicing elit. Eos, eaque!</p>
+    <p>Lorem ipsum dolor sit amet <strong>consectetur</strong> adipisicing elit. Eos, eaque!</p>
+    <p>Lorem ipsum dolor sit amet <i>consectetur</i> adipisicing elit. Eos, eaque!</p>
+    <p>Lorem ipsum dolor sit amet <em>consectetur</em> adipisicing elit. Eos, eaque!</p>
+    <p>Lorem ipsum dolor sit amet <span style="color: red;">consectetur</span> adipisicing elit. Eos, eaque!</p>
+    <hr>
+
+    <!-- image,video,audio -->
+    <h1>Image & Video and Audio</h1>
+
+    <img src="source/bg.jpg" alt="nature" width="500px" height="300px">
+
+    <video src="source/sea.mp4" autoplay controls width="500px" height="300px"></video>
+
+    <audio src="source/bird.wav" controls></audio>
+
+    <hr>
+
+    <!-- list -->
+    <h1>Ordered List & Unordered List and Description List</h1>
+    
+    <!-- Ordered List -->
+    <h4>Ordered List</h4>
+
+    <ol>
+        <li>Html</li>
+        <li>Css</li>
+        <li>JavaScript</li>
+    </ol>
+
+    <!-- Unordered List -->
+    <h4>Unordered List</h4>
+
+    <ul>
+        <li>Html
+            <ul>
+                <li>Heading</li>
+                <li>paragraph</li>
+                <li>image,video,audio</li>
+            </ul>
+        </li>
+        <li>Css</li>
+        <li>JavaScript</li>
+    </ul>
+
+    <!-- Description List -->
+    <h4>Description List</h4>
+
+    <dl>
+        <dt>Html
+            <dd>Heading</dd>
+            <dd>paragraph</dd>
+            <dd>image,video,audio</dd>
+            <dd>Lists</dd>
+        </dt>
+        
+    </dl>
+
+    <hr>
+
+    <!-- Sementic Tags -->
+    <center>
+    <h1>Sementic Tags</h1>
+
+    <img src="source/sementic.jpg" alt="sementic" width="80%">
+    </center>
+    <hr>
+
+    <!-- Table -->
+    <center>
+    <h1>Table</h1>
+    
+    <table border="1" cellspacing="10px" cellpadding="10px" >
+        <!-- table Head -->
+        <tr>
+            <th>S.No.</th>
+            <th>City Name</th>
+            <th>State</th>
+        </tr>
+
+        <!-- table datas -->
+        <tr>
+            <td>1</td>
+            <td>Trichy</td>
+            <td>Tamil Nadu</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Chennai</td>
+            <td>Tamil Nadu</td>
+        </tr>
+    </table> 
+
+    <br>
+
+    <table border="1" cellspacing="10px" cellpadding="10px" style="border-collapse: collapse;" >
+        <!-- table Head -->
+        <tr>
+            <th>S.No.</th>
+            <th>City Name</th>
+            <th>State</th>
+        </tr>
+
+        <!-- table datas -->
+        <tr>
+            <td>1</td>
+            <td>Trichy</td>
+            <td rowspan="2">Tamil Nadu</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Chennai</td>
+        </tr>
+    </table>
+    </center>
+    <hr>
+
+    <!-- Form -->
+    <h1>Form</h1>
+   
+    <form>        
+        <label for="name">Name : </label>
+        <input type="text" id="name" required>
+        <br><br>
+        
+        <label>Email:
+            <input type="email">
+        </label>
+        
+        <br><br>
+        
+        <label for="age">Age : </label>
+        <input type="number"  id="age" min="1" max="100">
+        <br><br>
+        
+        <label for="date">Birthdate : </label>
+        <input type="date"  id="date">
+        
+        
+        <p>Food</p>        
+            <label for="banana">Banana</label>
+            <input type="checkbox"  id="banana"><br>        
+        
+            <label for="apple">Apple</label>
+            <input type="checkbox"  id="apple">            
+        <br><br>
+        
+        <p>Gender</p>        
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male" ><br>        
+        
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female" >            
+        <br><br>
+        
+        <label for="place">Place : </label>
+
+            <select id="place" >
+                <option value="trichy">Trichy</option>
+                <option value="covai">Covai</option>
+                <option value="madurai" disabled>Madurai</option>
+                <option label="Chennai" value="Red"></option>
+            </select>
+        <br><br>
+        
+        <label for="bio">Bio : </label>
+        <textarea id="bio"></textarea>
+        <br><br>
+        
+        <label for="file">File : </label>
+        <input id="file" type="file">
+        <br><br>
+        
+        <label for="phone">Phone : </label>
+        <input type="tel" id="phone">
+        <br><br>
+        
+        <label for="url">URL : 
+            <input type="url">
+        </label>
+        
+        <br><br>
+
+        <label >Password:
+            <input type="password">
+        </label>
+        
+        <br><br>      
+        
+        <label for="color">Color : </label>
+        <input type="color"  id="color">
+        <br><br>        
+      
+
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </form>
+    
+</body>
+
+</html>
